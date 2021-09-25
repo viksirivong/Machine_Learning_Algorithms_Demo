@@ -1,9 +1,10 @@
 #-------------------------------------------------------------------------
 # AUTHOR: Thongsavik Sirivong
 # FILENAME: decision_tree.py
-# SPECIFICATION: description of the program
+# SPECIFICATION: The program train, test, and output the performance of the models created by using each training set from files, contact_lens_training_1.csv, contact_lens_training_2.csv, 
+#                and contact_lens_training_3.csv, on the test set provided (contact_lens_test.csv).
 # FOR: CS 4210- Assignment #2
-# TIME SPENT: how long it took you to complete the assignment
+# TIME SPENT: 2 hours
 #-----------------------------------------------------------*/
 
 #IMPORTANT NOTE: DO NOT USE ANY ADVANCED PYTHON LIBRARY TO COMPLETE THIS CODE SUCH AS numpy OR pandas. You have to work here only with standard vectors and arrays
@@ -127,3 +128,4 @@ for ds in dataSets:
    #your output should be something like that: final accuracy when training on contact_lens_training_1.csv: 0.2
    #--> add your Python code here
    print('Final accuracy when training on', ds, ':', lowestAccuracy)
+   
