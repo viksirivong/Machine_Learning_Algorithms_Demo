@@ -55,7 +55,7 @@ with open('optdigits.tes', 'r') as testingFile:
         clf = tree.DecisionTreeClassifier(criterion = 'entropy', max_depth=None) #we will use a single decision tree without pruning it
         clf = clf.fit(X_training, Y_training)
 
-        TP_TN = 0
+        TP_TN = 0   #total number of True Positive and True Negative
         for i, testSample in enumerate(dbTest):
             #make the classifier prediction for each test sample and update the corresponding index value in classVotes. For instance,
             # if your first base classifier predicted 2 for the first test sample, then classVotes[0,0,0,0,0,0,0,0,0,0] will change to classVotes[0,0,1,0,0,0,0,0,0,0].
@@ -86,7 +86,7 @@ with open('optdigits.tes', 'r') as testingFile:
 
 #now, compare the final ensemble prediction (majority vote in classVotes) for each test sample with the ground truth label to calculate the accuracy of the ensemble classifier (all base classifiers together)
 #--> add your Python code here
-TP_TN = 0
+TP_TN = 0   #total number of True Positive and True Negative
 for i, testSample in enumerate(dbTest):
     voted_class = 0
     for j, vote in enumerate(classVotes[i]):
