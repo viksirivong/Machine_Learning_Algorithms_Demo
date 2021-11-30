@@ -1,9 +1,9 @@
 #-------------------------------------------------------------------------
-# AUTHOR: your name
-# FILENAME: title of the source file
-# SPECIFICATION: description of the program
+# AUTHOR: Thongsavik Sirivong
+# FILENAME: association_rule_mining.py
+# SPECIFICATION: 
 # FOR: CS 4200- Assignment #5
-# TIME SPENT: how long it took you to complete the assignment
+# TIME SPENT: 
 #-----------------------------------------------------------*/
 
 import pandas as pd
