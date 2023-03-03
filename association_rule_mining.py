@@ -14,7 +14,7 @@ from mlxtend.frequent_patterns import apriori, association_rules
 #Use the command: "pip install mlxtend" on your terminal to install the mlxtend library
 
 #read the dataset using pandas
-df = pd.read_csv('retail_dataset.csv', sep=',')
+df = pd.read_csv('data/retail_dataset.csv', sep=',')
 
 #find the unique items all over the data an store them in the set below
 itemset = set()

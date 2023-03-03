@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import silhouette_score
 from sklearn import metrics
 
-df = pd.read_csv('training_data.csv', sep=',', header=None) #reading the data by using Pandas library
+df = pd.read_csv('data/training_data.csv', sep=',', header=None) #reading the data by using Pandas library
 
 #assign your training data to X_training feature matrix
 X_training = df.iloc[:,:-1]
