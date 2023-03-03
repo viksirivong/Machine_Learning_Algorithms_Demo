@@ -1,1 +1,1 @@
-# Machine_Learning_Algorithms_Demo
+# Machine Learning Algorithms Demo
