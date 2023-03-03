@@ -24,13 +24,13 @@ Y_training = []
 classVotes = [] #this array will be used to count the votes of each classifier
 
 #reading the training data in a csv file
-with open('optdigits.tra', 'r') as trainingFile:
+with open('data/optdigits.tra', 'r') as trainingFile:
     reader = csv.reader(trainingFile)
     for i, row in enumerate(reader):
         dbTraining.append (row)
 
 #reading the test data in a csv file
-with open('optdigits.tes', 'r') as testingFile:
+with open('data/optdigits.tes', 'r') as testingFile:
     reader = csv.reader(testingFile)
     for i, row in enumerate(reader):
         dbTest.append (row)

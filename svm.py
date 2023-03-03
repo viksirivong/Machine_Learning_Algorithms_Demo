@@ -23,14 +23,14 @@ decision_function_shape = ["ovo", "ovr"]
 highestAccuracy = 0
 
 #reading the data in a csv file
-with open('optdigits.tra', 'r') as trainingFile:
+with open('data/optdigits.tra', 'r') as trainingFile:
   reader = csv.reader(trainingFile)
   for i, row in enumerate(reader):
       X_training.append(row[:-1])
       Y_training.append(row[-1])
 
 #reading the data in a csv file
-with open('optdigits.tes', 'r') as testingFile:
+with open('data/optdigits.tes', 'r') as testingFile:
   reader = csv.reader(testingFile)
   for i, row in enumerate(reader):
       dbTest.append (row)
