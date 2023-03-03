@@ -17,7 +17,7 @@ import csv
 dbTraining = []
 
 #reading the training data in a csv file
-with open('weather_training.csv', 'r') as csvfile:
+with open('data/weather_training.csv', 'r') as csvfile:
     reader = csv.reader(csvfile)
     for i, row in enumerate(reader):
         if i > 0: #skipping the header
@@ -72,7 +72,7 @@ clf.fit(X, Y)
 dbTest = []
 
 #reading the test data in a csv file
-with open('weather_test.csv', 'r') as csvfile:
+with open('data/weather_test.csv', 'r') as csvfile:
     reader = csv.reader(csvfile)
     for i, row in enumerate(reader):
         if i > 0: #skipping the header

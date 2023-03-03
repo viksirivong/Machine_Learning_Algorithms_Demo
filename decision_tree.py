@@ -14,7 +14,7 @@ from os import access
 from sklearn import tree
 import csv
 
-dataSets = ['contact_lens_training_1.csv', 'contact_lens_training_2.csv', 'contact_lens_training_3.csv']
+dataSets = ['data/contact_lens_training_1.csv', 'data/contact_lens_training_2.csv', 'data/contact_lens_training_3.csv']
 
 for ds in dataSets:
 
@@ -77,7 +77,7 @@ for ds in dataSets:
       #read the test data and add this data to dbTest
       #--> add your Python code here
       dbTest = []
-      with open('contact_lens_test.csv', 'r') as csvfile:
+      with open('data/contact_lens_test.csv', 'r') as csvfile:
          reader = csv.reader(csvfile)
          for i, row in enumerate(reader):
             if i > 0: #skipping the header
